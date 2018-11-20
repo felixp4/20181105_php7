@@ -1,0 +1,11 @@
+<?php ## Финальные методы
+
+final class Base
+{
+    public final function test() {}
+}
+
+class Derive extends Base
+{
+    public function test() {}
+}
