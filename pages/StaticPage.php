@@ -5,7 +5,7 @@ class StaticPage extends Cached
 {
     public function __construct($id)
     {
-        parent::__construct( '', '',10);
+        parent::__construct();
 
         if ($this->isCached($this->id($id))) {
             parent::__construct($this->title(), $this->content());
@@ -15,15 +15,12 @@ class StaticPage extends Cached
             // $sth = $dbh->execute($query, [id]);
             // $page = $sth->fetch(PDO::FETCH_ASSOC);
             // $parent::__construct($page['title'], $page['content']);
-            parent::__construct("Контакты","Содержимое страницы Контакты");
+            parent::__construct("Контакты1","Содержимое страницы Контакты1", 10);
         }
     }
 
-    public function id($id)
+    public function id($name)
     {
-        return "static_page_{$id}";
+        return "static_page_{$name}";
     }
 }
-
-$sp = new StaticPage("01");
-$sp->render();

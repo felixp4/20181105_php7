@@ -1,8 +1,8 @@
 <?php ## Базовый класс для кешируемых страниц
 
-require_once "Page.php";
+require_once "PageA.php";
 
-class Cached extends Page
+abstract class Cached extends Page
 {
     protected $expires;
     protected $store;
@@ -39,10 +39,7 @@ class Cached extends Page
         return $this->store->get($key);
     }
 
-    public function id($key)
-    {
-        die("Что здесь делать? Неизвестно!");
-    }
+    abstract public function id($name);
 
     public function title()
     {
@@ -62,13 +59,3 @@ class Cached extends Page
         }
     }
 }
-
-/* $ch = new Cached('Cache', 'Testing Memcache', 10);
-$ch->render();
-$ch->getm();
-
-// echo "<br /> Test memcache: " . $ch->isCached('content');
-echo "<br />" . $ch->get('content');
-
-echo "<br /><br />" . $ch->title();
-echo "<br /><br />" . $ch->content(); */

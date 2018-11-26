@@ -1,6 +1,6 @@
 <?php ## Базовый класс страницы
 
-class Page
+abstract class Page
 {
     protected $title;
     protected $content;
