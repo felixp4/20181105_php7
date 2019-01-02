@@ -1,0 +1,8 @@
+[02-Jan-2019 17:35:41 Europe/Helsinki] PHP Warning:  filemtime(): stat failed for spoon in /home/felix/www/20181105_php7/except/er.php on line 5
+[02-Jan-2019 17:35:41 Europe/Helsinki] PHP Stack trace:
+[02-Jan-2019 17:35:41 Europe/Helsinki] PHP   1. {main}() /home/felix/www/20181105_php7/except/er.php:0
+[02-Jan-2019 17:35:41 Europe/Helsinki] PHP   2. filemtime() /home/felix/www/20181105_php7/except/er.php:5
+[02-Jan-2019 17:36:47 Europe/Helsinki] PHP Warning:  filemtime(): stat failed for spoon in /home/felix/www/20181105_php7/except/er.php on line 5
+[02-Jan-2019 17:36:47 Europe/Helsinki] PHP Stack trace:
+[02-Jan-2019 17:36:47 Europe/Helsinki] PHP   1. {main}() /home/felix/www/20181105_php7/except/er.php:0
+[02-Jan-2019 17:36:47 Europe/Helsinki] PHP   2. filemtime() /home/felix/www/20181105_php7/except/er.php:5
