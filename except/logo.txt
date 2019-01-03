@@ -1,0 +1,5 @@
+[03-Jan-2019 16:25:14 Europe/Helsinki] PHP Fatal error:  Функция print_age(): возраст не может быть отрицательным in /home/felix/www/20181105_php7/except/trigger_error.php on line 15
+[03-Jan-2019 16:25:14 Europe/Helsinki] PHP Stack trace:
+[03-Jan-2019 16:25:14 Europe/Helsinki] PHP   1. {main}() /home/felix/www/20181105_php7/except/trigger_error.php:0
+[03-Jan-2019 16:25:14 Europe/Helsinki] PHP   2. print_age() /home/felix/www/20181105_php7/except/trigger_error.php:20
+[03-Jan-2019 16:25:14 Europe/Helsinki] PHP   3. trigger_error() /home/felix/www/20181105_php7/except/trigger_error.php:15
