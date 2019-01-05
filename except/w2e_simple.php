@@ -1,9 +1,9 @@
 <?php ## Преобразование ошибок в исключения
 
-// require_once "PHP/Exceptionizer.php";
+require_once "../PHP/Exceptionizer.php";
 
 // Для большей наглядности поместим основной проверочный код в функцию
-// suffer();
+suffer();
 
 // Убеждаемся, что перехват действительно был отключен
 echo "<b>Дальше должно идти обычное сообщение PHP.</b>";
@@ -16,6 +16,8 @@ function suffer()
     // превращаются в одноименные исключения
 
     $w2e = new PHP_Exceptionizer(E_ALL);
+    var_dump($w2e);
+    // echo "<pre>", $w2e, "</pre>";
 
     try {
         // Открываем несуществующий файл. Здесь будет ошибка E_WARNING.
