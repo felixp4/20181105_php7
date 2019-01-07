@@ -53,3 +53,24 @@ $view->addPage('about', function() {
 });
 
 $view->render('about');
+
+echo IntlChar::ord("А")."<br />";
+echo IntlChar::ord("A")."<br />";
+echo IntlChar::chr(1040)."<br />";
+echo IntlChar::chr(65)."<br /><br />";
+
+echo IntlChar::toupper("a")."<br />";
+echo IntlChar::toupper("A")."<br /><br />";
+
+echo IntlChar::tolower("A")."<br />";
+echo IntlChar::tolower("a")."<br /><br />";
+
+echo IntlChar::isalnum("1")."<br />";
+echo IntlChar::isalnum("A")."<br />";
+echo IntlChar::isalnum("-")."<br /><br />";
+
+echo IntlChar::isdigit("1")."<br />";
+echo IntlChar::isdigit("A")."<br /><br />";
+
+echo IntlChar::isalpha("Ф")."<br />";
+echo IntlChar::isalpha("1")."<br /><br />";
